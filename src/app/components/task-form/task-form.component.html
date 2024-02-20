@@ -1,0 +1,27 @@
+<div class="container mx-auto py-10">
+    <form class="w-100 max-w-sm">
+      <div class="input-group">
+        <input
+        [(ngModel)]="newTask"
+
+          name="newTask"
+          class="form-control"
+          type="text"
+          placeholder="Add task"
+        />
+        <div class="input-group-append">
+          <button
+            (click) = "addTask()"
+            type="button"
+            class="btn btn-primary"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div>
+    <app-tasks-list [tasks]="tasks"></app-tasks-list>
+  </div>
+  

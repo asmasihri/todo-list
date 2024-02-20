@@ -1,0 +1,12 @@
+.custom-bg-image {
+  background-image: url('./image-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  background-color: rgba(255, 0, 0, 2); /* Rouge semi-transparent */
+}
+.custom-bg-grey{
+    background-color: rgba(128, 128, 128, 0.5); /* Gris semi-transparent */
+
+}

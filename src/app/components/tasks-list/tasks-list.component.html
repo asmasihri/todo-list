@@ -1,0 +1,9 @@
+
+    <div *ngFor="let task of tasks" class="w-1/4 bg-gray-100 p-4 mb-4 rounded-lg">
+      <ul>
+        <li class="text-gray-800">{{ task.name }}</li>
+      </ul>
+      <button class="primary" (click) = "removeTask(task)"> Remove</button>
+      <button class="primary" (click)="toggleCompleted(task)">
+        {{task.completed ? 'NOT DID' : 'DID'}}
+      </button>
